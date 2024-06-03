@@ -2,13 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { CountriesRoutingModule } from './countries-routing.module';
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { SelectorPageComponent } from './selector-page/selector-page.component';
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
-    CountriesRoutingModule
-  ]
+  declarations: [SelectorPageComponent],
+  imports: [CommonModule, CountriesRoutingModule, ReactiveFormsModule],
 })
-export class CountriesModule { }
+export class CountriesModule {}
