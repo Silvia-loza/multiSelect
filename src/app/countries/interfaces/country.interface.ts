@@ -1,8 +1,9 @@
 export enum Region {
-  Africa = 'Africa',
+  africa = 'Africa',
   america = 'America',
   europe = 'Europa',
   oceania = 'Oceania',
+  asia = 'Asia',
 }
 
 export interface Country {

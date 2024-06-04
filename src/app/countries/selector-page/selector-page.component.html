@@ -9,7 +9,9 @@
       <label class="form-label">Continente</label>
       <select class="form-control" formControlName="region">
         <option value="">-- Seleccione Continente--</option>
-        <option value="Africa">Africa</option>
+        @for(region of regions; track $index) {
+        <option [value]="region">{{ region }}</option>
+        }
       </select>
     </div>
   </div>
