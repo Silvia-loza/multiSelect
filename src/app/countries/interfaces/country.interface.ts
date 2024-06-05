@@ -1,11 +1,16 @@
 export enum Region {
-  africa = 'Africa',
-  america = 'America',
-  europe = 'Europa',
-  oceania = 'Oceania',
-  asia = 'Asia',
+  africa = 'africa',
+  america = 'americas',
+  europe = 'europe',
+  oceania = 'oceania',
+  asia = 'asia',
+  antarctic = 'antarctic',
 }
-
+export interface smallCountry {
+  name: string;
+  cca3: string;
+  borders: string[];
+}
 export interface Country {
   name: Name;
   cca3: string;

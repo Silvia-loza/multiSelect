@@ -15,6 +15,22 @@
       </select>
     </div>
   </div>
+
+  <!-- Countries -->
+  <div class="row mb-3">
+    <div class="col">
+      <label class="form-label">Pais</label>
+      <select class="form-control" formControlName="country">
+        <option value="none">-- Seleccione Pais--</option>
+
+        @for(country of countires; track $index) { @if( countires ) {
+        <option [value]="country.cca3">
+          {{ country.name }}
+        </option>
+        } }
+      </select>
+    </div>
+  </div>
 </form>
 
 <h3>Formulario</h3>
