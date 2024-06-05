@@ -31,6 +31,22 @@
       </select>
     </div>
   </div>
+  <!-- Código API no funciona correctamente incompleto-->
+  @if(borders.length > 0) {
+  <div class="row mb-3">
+    <div class="col">
+      <label class="form-label">Selected Border</label>
+      <select class="form-control" formControlName="borders">
+        <option value="none">-- Seleccione La frontera--</option>
+        @for(border of borders; track $index) { @if( countires ) {
+        <option [value]="border.borders">
+          {{ border.borders }}
+        </option>
+        } }
+      </select>
+    </div>
+  </div>
+  }
 </form>
 
 <h3>Formulario</h3>
